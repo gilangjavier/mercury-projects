@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . .
 
 # Build the Golang application
-RUN go build -o main .
+RUN go build -o go-backend .
 
 # Expose the port the app runs on
 EXPOSE 8080
 
 # Run the application
-ENTRYPOINT ["./main"]
+ENTRYPOINT ["./go-backend"]
